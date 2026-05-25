@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "name": "aws.sqs.queue.entrada-pedido",
+      "type": "java.lang.String",
+      "description": "Nome da fila SQS para entrada de pedidos (FIFO)"
+    },
+    {
+      "name": "aws.sqs.queue.region",
+      "type": "java.lang.String",
+      "description": "Região AWS para a fila SQS",
+      "defaultValue": "us-east-1"
+    },
+    {
+      "name": "spring.cloud.aws.credentials.access-key",
+      "type": "java.lang.String",
+      "description": "AWS Access Key ID"
+    },
+    {
+      "name": "spring.cloud.aws.credentials.secret-key",
+      "type": "java.lang.String",
+      "description": "AWS Secret Access Key"
+    },
+    {
+      "name": "spring.cloud.aws.region.static",
+      "type": "java.lang.String",
+      "description": "AWS region",
+      "defaultValue": "us-east-1"
+    }
+  ]
+}

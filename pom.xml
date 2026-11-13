@@ -10,23 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>servico-auditor-dlq</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name />
-	<description />
-	<url />
-	<licenses>
-		<license />
-	</licenses>
-	<developers>
-		<developer />
-	</developers>
-	<scm>
-		<connection />
-		<developerConnection />
-		<tag />
-		<url />
-	</scm>
+	<name>servico-auditor-dlq</name>
+	<description>Serviço que consome a DLQ de pedidos (SQS), classifica a gravidade e grava registros de auditoria</description>
 	<properties>
 		<java.version>17</java.version>
 		<aws.sdk.version>2.30.32</aws.sdk.version>

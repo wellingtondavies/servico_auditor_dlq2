@@ -3,29 +3,19 @@
     {
       "name": "aws.sqs.queue.entrada-pedido",
       "type": "java.lang.String",
-      "description": "Nome da fila SQS para entrada de pedidos (FIFO)"
+      "description": "Nome da DLQ (SQS FIFO) consumida pelo auditor"
     },
     {
       "name": "aws.sqs.queue.region",
       "type": "java.lang.String",
-      "description": "Região AWS para a fila SQS",
+      "description": "Região AWS da fila SQS",
       "defaultValue": "us-east-1"
     },
     {
-      "name": "spring.cloud.aws.credentials.access-key",
-      "type": "java.lang.String",
-      "description": "AWS Access Key ID"
-    },
-    {
-      "name": "spring.cloud.aws.credentials.secret-key",
-      "type": "java.lang.String",
-      "description": "AWS Secret Access Key"
-    },
-    {
-      "name": "spring.cloud.aws.region.static",
-      "type": "java.lang.String",
-      "description": "AWS region",
-      "defaultValue": "us-east-1"
+      "name": "auditor.consumer.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Liga o polling da DLQ. Desligado nos testes, que não têm acesso à AWS.",
+      "defaultValue": true
     }
   ]
 }
